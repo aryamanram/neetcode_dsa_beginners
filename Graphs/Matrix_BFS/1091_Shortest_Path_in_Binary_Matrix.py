@@ -6,9 +6,9 @@ class Solution:
 
         q = deque([(0, 0, 1)])
         visit = set((0, 0))
+        
         direct = [(0, 1), (1, 0), (0, -1), (-1, 0),
                   (1, 1), (-1, -1), (1, -1), (-1, 1)]
-
         while q:
             r, c, length = q.popleft()
             if r == N - 1 and c == N - 1:
